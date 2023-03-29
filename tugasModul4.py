@@ -13,6 +13,9 @@ def header():
 #player
 def playerinput ():
     inputuser = int (input ('Apa piihan anda? '))
+    if inputuser > 2 or inputuser < 0:
+        print("Masukkan pilihan dengan benar!\n")
+        return playerinput()
     player = tools[inputuser]
     print (f'\nPlayer memilih {player}')
     return player
@@ -58,7 +61,6 @@ while True :
     PLAYER = playerinput()
     COMPUTER = komputerinput()
     HASIL = output (PLAYER,COMPUTER)
-    
     konfirmasi = input ('Ingin bermain lagi? ')
     if konfirmasi == 'ya':
         pass
