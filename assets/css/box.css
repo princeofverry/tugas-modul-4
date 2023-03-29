@@ -1,0 +1,26 @@
+div {
+    width: 300px;
+}
+
+div {
+    /* border-bottom-style: inset;
+    border-top-style: double;
+    border-right-style: groove;
+    border-left-style: ridge; */
+    /* style border diatas sama dengan syntax dibawah 
+    sama halnya pada width dan kawan2*/
+    border-style: double groove inset ridge;
+    border-width: 3px 15px 3px 15px;
+    border-color: blue;
+}
+
+div {
+    padding-top: 20px;
+    padding-right: 40px;
+    padding-bottom: 20px;
+    padding-left: 70px;
+}
+
+div {
+    margin: 20px 40px 10px 0;
+}

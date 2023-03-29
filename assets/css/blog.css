@@ -1,0 +1,61 @@
+/* digunakan untuk mengubah warna publish "p"
+agar hanya "P" saja yang berubah tidak dengan div didalamnya */
+
+.jokes > p {
+    color: darkgoldenrod;
+    font: size 14px; 
+}
+
+.jokes > p:hover{
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+section button {
+    background-color: white;
+}
+
+section button:hover {
+    background-color: cyan;
+}
+
+/* untuk huruf pertama */
+
+section h3::first-letter {
+    font-size: xx-large;
+}
+
+/* untuk baris pertama */
+section p::first-line {
+    color: green;
+}
+
+/* ini menambahkan content dengan string "..." */
+section h3::before {
+    content: "*";
+}
+
+/*Digunakan untuk mengubah elemen warna button setelah anchor 
+atau mengubah button yang ada pada anchor +  */
+
+a + button {
+    background-color: royalblue;
+}
+
+input[type="text"] {
+    color: blue;
+}
+
+input[type="password"] {
+    color: blue;
+}
+
+#anchor {
+    text-decoration: none;
+    color: red;
+}
+
+/* elemen pemilihan */
+section:nth-of-type(2n+1) {
+    background-color:aquamarine;
+}

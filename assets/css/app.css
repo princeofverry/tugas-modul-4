@@ -1,0 +1,29 @@
+* {
+    background-color: #A0C3D2;
+}
+
+h1, h2, h3 {
+    color: #F7F5EB;
+    background-color: #A0C3D2;
+}
+span {
+    color: #EAC7C7;
+}
+
+/* ini untuk ID dan khusus berubah menjadi warna putih */
+/* kalo id hanya untuk satu nama gabisa digrouping */
+/* ID diawali dengan # */
+#list1 {
+    color:blue ;
+}
+
+#list2 {
+    color: black;
+}
+
+/* kalo kelas bisa digrouping dan disebar luaskan di html */
+/* class diawali dengan . */
+
+.mark {
+    background-color: aqua;
+}
