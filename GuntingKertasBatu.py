@@ -52,7 +52,7 @@ class gamsut :
         elif player == 'kertas' and computerinput == 'gunting':
             print (f'{self.name} kalah')  
         
-        player1 = gamsut(input('siapa ini yang bermain? '))
+player1 = gamsut(input('siapa ini yang bermain? '))
 while True :
     header()
     PLAYER = gamsut.playerinput(player1)
