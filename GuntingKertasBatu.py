@@ -9,8 +9,8 @@ def header():
         ''')
 
 class gamsut :
-    def _init_(self,name):
-        self.name = name
+    def __init__(self,name):
+        self.name = name
                 
     def playerinput (self):
         inputuser = int (input (f'Apa pilihan {self.name} (angka)? '))
@@ -26,7 +26,7 @@ class gamsut :
         computerinput = random.choice(tools)
         print (f'Computer memilih {computerinput}')
         return computerinput
-
+    
     def output(self,player,computerinput):
         # player gunting
         if player == 'gunting' and computerinput == 'batu':
@@ -51,7 +51,9 @@ class gamsut :
             print ('Seri')
         elif player == 'kertas' and computerinput == 'gunting':
             print (f'{self.name} kalah')  
-        
+            
+
+
 player1 = gamsut(input('siapa ini yang bermain? '))
 while True :
     header()
@@ -64,4 +66,4 @@ while True :
         pass
     else:
         break
-print ('Terimakasih sudah bermain...')
+print ('Terimakasih sudah bermain...')
