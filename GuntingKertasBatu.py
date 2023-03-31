@@ -51,3 +51,17 @@ class gamsut :
             print ('Seri')
         elif player == 'kertas' and computerinput == 'gunting':
             print (f'{self.name} kalah')  
+        
+        player1 = gamsut(input('siapa ini yang bermain? '))
+while True :
+    header()
+    PLAYER = gamsut.playerinput(player1)
+    COMPUTER = gamsut.komputerinput()
+    RESULT = gamsut.output(player1,PLAYER,COMPUTER)
+    
+    konfirmasi = input ('\nIngin bermain lagi (ya/tidak)? ')
+    if konfirmasi == 'ya':
+        pass
+    else:
+        break
+print ('Terimakasih sudah bermain...')
