@@ -26,3 +26,28 @@ class gamsut :
         computerinput = random.choice(tools)
         print (f'Computer memilih {computerinput}')
         return computerinput
+
+    def output(self,player,computerinput):
+        # player gunting
+        if player == 'gunting' and computerinput == 'batu':
+            print(f'{self.name} Kalah')
+        elif player == 'gunting' and computerinput == 'kertas':
+            print (f'{self.name} Menang')
+        elif player == 'gunting' and computerinput == 'gunting':
+            print ('Seri')  
+
+        # player batu
+        if player == 'batu' and computerinput == 'batu':
+            print ('Seri')
+        elif player == 'batu' and computerinput == 'kertas':
+            print (f'{self.name} kalah')
+        elif player == 'batu' and computerinput == 'gunting':
+            print (f'{self.name} menang')  
+
+        # player kertas
+        if player == 'kertas' and computerinput == 'batu':
+            print (f'{self.name} menang')
+        elif player == 'kertas' and computerinput == 'kertas':
+            print ('Seri')
+        elif player == 'kertas' and computerinput == 'gunting':
+            print (f'{self.name} kalah')  
